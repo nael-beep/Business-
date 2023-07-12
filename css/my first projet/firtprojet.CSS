@@ -1,0 +1,179 @@
+/*couleur de mon fond*/
+.body{
+    background-color: rgb(101, 106, 116);}
+
+    body{
+        font-family: 'poppins', sans-serif;
+    }
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;}
+
+    /*disposition entete*/
+    .navbar{
+        display: flex;/*display flex pour aligner origontalement*/
+        align-items:center;}
+
+/*mise en forme de la liste*/
+.trans li{
+    text-decoration:none;
+    padding: 10px 30px;
+    background-color:blue;
+    border-radius:30px;
+    display: inline-block;
+    margin-top:25px;
+    transition:background 0.5s;}
+
+.trans li a{
+    color:white}
+
+.trans li:hover{
+    background:red;}
+
+nav{
+    flex: 1;
+    text-align: right;
+    display: block;}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;}
+
+nav ul li{
+    display: inline-block;
+    margin-right:20px;}
+
+nav ul li a{
+    text-decoration: none;}
+
+/*mise en forme du titre*/
+.row h1{
+    color:white;
+    background:red ;
+    border-radius:30px;
+    width: 400px;
+    margin-left: 20px;}
+.row .titre-description{
+width: 150px; ;
+} 
+
+.row .appropos{
+    width: 150px; ;
+    } 
+
+
+/*couleur du paragraphe*/
+p{
+    color:rgb(17, 15, 15)}
+
+/*logo*/
+.logo img{
+    width: 300px;}
+
+
+.containeur{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding-left: 25px;
+    padding-right: 25px;}
+
+.col-2{
+    flex-basis:50%;
+    min-width: 300px;}
+
+.col-2 img{
+     width:100%;
+    padding-left: 30px 0;}
+
+.col-2 h1{
+    font-size: 20px;
+    line-height: 60px;
+    margin:25px 0;
+    margin-left: 20px;}
+
+.col-2 a{
+    text-decoration:none;
+    padding: 10px 30px;
+    background-color:red;
+     color: white;
+    border-radius:30px;
+    display: inline-block;
+    margin-top:25px;
+    transition:background 0.5s;
+    margin-left :20px;}
+    
+.header-section{
+    background:radial-gradient(#fff,#eaf2fb);}/*changer le background de la zons section*/
+.col-2 a:hover{
+    background:blue;}
+
+/*les categories*/
+
+/*espace entre la premiere image et les categories*/
+.categories{
+    margin: 70px 0;}
+
+/*style de lasection catégorie*/
+.col-3{
+    flex-basis:28%;
+    width:500px;margin:auto;
+    border-radius:30px;
+    transition: transform 05s;}
+
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;}
+
+.contener h2{
+    text-align: center;
+    font-size:1.rem;
+    color:white;
+    margin: 60px 0;
+    background-color: red;
+    width: 200px;
+    border-radius:30px;
+    margin-left: 700px;}
+
+    .col-3:hover{
+        transform:translate(-20px) ;
+    }
+    
+
+    /*section des meilleurs plats*/
+
+ .fac{
+    margin: 70px 0;
+ }   
+
+/*plats*/
+.col-4{
+    flex-basis: 25%;
+min-width: 200px;
+padding: 20px;
+transition: transform 05s;}
+
+.col-4 img{
+    width: 100%;
+    display: inline-block;
+    display: flex;}
+
+.contener h3{
+    text-align: center;
+    font-size:1.rem;
+    color:white;
+    margin: 60px 0;
+    background-color:red;
+    width: 200px;
+    border-radius:30px;
+    margin-left: 700px;}
+ 
+    .col-4:hover{
+        transform:translate(-20px) ;
+    }
+    .autres{
+        background:radial-gradient(rgb(133, 146, 156),#3a628f);
+    }
