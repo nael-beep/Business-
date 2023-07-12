@@ -41,14 +41,16 @@ h1,#menu{
 .search{
     width: 330px;
     float: left;
-    margin-left: 270px;
+    margin-left: 1100px;
+    margin-top: 20px;
+    margin-bottom:-90% ;
 
 }
 .srch{
     width:200px;
     height: 40px;
     background:transparent;
-    border : 1px solid #fff;
+    border : 1px solid rgb(181, 180, 194);
     margin-top:13px ;
     color:#fff;
     border-right: none;
