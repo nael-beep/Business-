@@ -3,12 +3,23 @@
     margin: 0px;
 }
 body{
-    background-color:rgb(181, 180, 194) ;
+    background-color: rgb(181, 180, 194);
+    background-image: url(../Images/fond1.jpg);
+    background-repeat: no-repeat;
+    background-position:100%  auto;
+    background-size: 100%;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 50px;
     padding-top: 20px;
     font-family: "Century Gothic";
+    
+}
+#logo{
+    width: 150px;
+    height: auto;
+    margin-left: 45%;
+    margin-right: 45%;
 }
 h1{
     color:rgb(2, 28, 144);
@@ -38,18 +49,29 @@ h1,#menu{
     padding-right: 20px;
     padding-left: 20px;
     border-radius: 2px;
+    margin-left: 1200px; ;
+    border: solid  #fff;
+    background-color:rgb(2,28,144) ;
+    margin-top: -;
 
+}
+#ser{
+    width: 46px;
 }
 #menu a:hover{
     background-color: white;
     color: rgb(2,28,144);
+ 
+}
+#menu h2{
+    margin-left: 1210px;
 }
 .search{
     width: 330px;
     float: left;
-    margin-left: 1100px;
-    margin-top: 20px;
-    margin-bottom:-90% ;
+    margin-left: 995px;
+    margin-top: -90px;
+     
 
 }
 .srch{
@@ -140,7 +162,7 @@ td{
 }
 
 .section img{
-    width: 100%;
+    width: 50%;
     height: auto;
     margin-bottom: 10px;
     transition: transform 05s;
@@ -192,8 +214,14 @@ footer{
     text-align: center;
     font-size: 16px;
     border-radius: 2px;
+    background-color: rgb(181, 180, 194);
 
 }
 .footer-links ul li a:hover{
     background-color:rgb(181, 180, 194) ;
+}
+.logos{
+    width: 100px;
+    height: 100px;
+    display: inline;
 }

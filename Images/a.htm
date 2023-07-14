@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="referrer" content="origin-when-cross-origin">
+    <script>//<![CDATA[
+      var s = false;
+      function l() {
+        setTimeout(f, 10000);
+        if (document.referrer) {
+          try {
+            var pm = /(^|&|\?)px=([^&]*)(&|$)/i;
+            var px = window.location.href.match(pm);
+            var rs = document.referrer;
+            if (px != null) {
+              if (rs.match(pm))
+                rs = rs.replace(pm, "$1px=" + px[2] + "$3");
+              else if (rs.indexOf("?") != -1)
+                rs = rs + "&px=" + px[2];
+              else
+                rs = rs + "?px=" + px[2];
+            }
+            history.replaceState({}, "Bing", rs);
+            window.addEventListener("pageshow", function(e) { if (e.persisted || (typeof window.performance != "undefined" && window.performance.navigation.type === 2)) window.location.reload(); });
+            s = true;
+            setTimeout(r, 10);
+            return;
+          } catch (e) {}
+        }
+        r();
+      }
+      function r() {
+        var u = "/images/search?q=logo&cbn=KnowledgeCard&stid=58a172aa-5a16-7437-c961-24578e55f594&thid=OSK.HERO63zKoSQdje1DN-RalyqXlAgxBa2shJpd-Yg-z38KGPw&FORM=KCHIMM";
+        if (s)
+          window.location.href = u;
+        else
+          window.location.replace(u);
+      }
+      function f() {
+        document.getElementById("fb").style.display = "block";
+      }
+      //]]>
+    </script>
+  </head>
+  <body onload="l()">
+    <div id="fb" style="display: none">
+      Please <a href="https://www.bing.com/ck/a?!&&p=4dc7154bded5e787JmltdHM9MTY4OTIwNjQwMCZpZ3VpZD0zZTI5NzQ4OS1hMDllLTYxOGYtMzkxNS02N2JkYTE5ZTYwOTEmaW5zaWQ9NTY2OQ&ptn=3&hsh=3&fclid=3e297489-a09e-618f-3915-67bda19e6091&u=a1L2ltYWdlcy9zZWFyY2g_cT1sb2dvJmNibj1Lbm93bGVkZ2VDYXJkJnN0aWQ9NThhMTcyYWEtNWExNi03NDM3LWM5NjEtMjQ1NzhlNTVmNTk0JnRoaWQ9T1NLLkhFUk82M3pLb1NRZGplMUROLVJhbHlxWGxBZ3hCYTJzaEpwZC1ZZy16MzhLR1B3JkZPUk09S0NISU1N&ntb=F">click here</a> if the page does not redirect automatically ...
+    </div>
+  </body>
+</html>
